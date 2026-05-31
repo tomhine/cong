@@ -2,6 +2,8 @@ package pong
 
 import rl "vendor:raylib"
 
+TARGET_FPS :: 60
+
 GRAVITY :: 2000
 BG_COLOR : rl.Color : { 110, 184, 168, 255 }
 
@@ -19,6 +21,7 @@ Animation :: struct {
 main :: proc() {
     rl.InitWindow(1280, 720, "Cong the Cat!")
     // rl.SetWindowState({ .WINDOW_RESIZABLE })
+    rl.SetTargetFPS(TARGET_FPS)
    
     player_pos := rl.Vector2 { 640, 320 }
     player_vel: rl.Vector2
