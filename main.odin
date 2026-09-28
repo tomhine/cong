@@ -1,4 +1,4 @@
-package pong
+package cong
 
 import rl "vendor:raylib"
 
